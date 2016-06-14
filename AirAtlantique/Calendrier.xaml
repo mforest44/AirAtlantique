@@ -1,0 +1,15 @@
+﻿<Window x:Class="AirAtlantique.Calendrier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirAtlantique"
+        mc:Ignorable="d"
+        Title="Calendrier" Height="300" Width="506.422">
+    <Grid>
+        <ListBox x:Name="date" HorizontalAlignment="Left" Height="186" Margin="10,46,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="Nom" HorizontalAlignment="Left" Height="186" Margin="156,46,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="Emp" HorizontalAlignment="Left" Height="186" Margin="310,46,0,0" VerticalAlignment="Top" Width="155"/>
+
+    </Grid>
+</Window>

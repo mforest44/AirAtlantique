@@ -1,0 +1,33 @@
+﻿<Window x:Class="AirAtlantique.ses.ListeSes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirAtlantique.ses"
+        mc:Ignorable="d"
+        Title="ListeSes" Height="530" Width="370">
+    <Grid>
+        <ListBox x:Name="listSes" HorizontalAlignment="Left" Height="134" Margin="10,31,0,0" VerticalAlignment="Top" Width="108" SelectionChanged="listSes_SelectionChanged"/>
+        <Button x:Name="Creation" Content="Créer Session" HorizontalAlignment="Left" Margin="92,452,0,0" VerticalAlignment="Top" Width="74" Click="Creation_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Liste Sessions" VerticalAlignment="Top"/>
+        <Button x:Name="Supprimer" Content="Supprimer" HorizontalAlignment="Left" Margin="0,452,0,0" VerticalAlignment="Top" Width="75" Click="Supprimer_Click" IsEnabled="False"/>
+        <ComboBox x:Name="Employe" HorizontalAlignment="Left" Margin="142,390,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Employe_SelectionChanged"/>
+        <Button x:Name="Retour" Content="Retour" HorizontalAlignment="Left" Margin="187,10,0,0" VerticalAlignment="Top" Width="75" Click="Retour_Click"/>
+        <Button x:Name="Ajouter" Content="Ajouter Employé" HorizontalAlignment="Left" Margin="187,452,0,0" VerticalAlignment="Top" Width="75" Click="Ajouter_Click" IsEnabled="False"/>
+        <TextBlock x:Name="Nom" HorizontalAlignment="Left" Margin="142,61,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top"/>
+        <TextBlock x:Name="nom" HorizontalAlignment="Left" Margin="274,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Lieu" HorizontalAlignment="Left" Margin="142,101,0,0" TextWrapping="Wrap" Text="Lieu" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lieu" HorizontalAlignment="Left" Margin="274,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Nbr" HorizontalAlignment="Left" Margin="142,146,0,0" TextWrapping="Wrap" Text="Nombre de place" VerticalAlignment="Top"/>
+        <TextBlock x:Name="nbr" HorizontalAlignment="Left" Margin="274,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Duree" HorizontalAlignment="Left" Margin="142,185,0,0" TextWrapping="Wrap" Text="Duree" VerticalAlignment="Top"/>
+        <TextBlock x:Name="duree" HorizontalAlignment="Left" Margin="274,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Date" HorizontalAlignment="Left" Margin="142,223,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top"/>
+        <TextBlock x:Name="date" HorizontalAlignment="Left" Margin="274,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Employes" HorizontalAlignment="Left" Margin="142,257,0,0" TextWrapping="Wrap" Text="Employes" VerticalAlignment="Top"/>
+        <ListBox x:Name="employe" HorizontalAlignment="Left" Height="100" Margin="252,257,0,0" VerticalAlignment="Top" Width="100"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/AirAtlantique;component/image/bleu.jpeg" Stretch="None"/>
+        </Grid.Background>
+    </Grid>
+</Window>

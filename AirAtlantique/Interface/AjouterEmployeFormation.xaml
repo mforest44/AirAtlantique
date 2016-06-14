@@ -1,0 +1,18 @@
+﻿<Window x:Class="AirAtlantique.Interface.AjouterEmployeFormation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AjouterEmployeFormation" Height="400" Width="400">
+    <Grid Margin="0,0,-8,0">
+        <ListBox HorizontalAlignment="Left" Height="19" Margin="24,24,0,0" VerticalAlignment="Top" Width="93" />
+        <TextBlock HorizontalAlignment="Left" Height="218" Margin="24,62,0,0" TextWrapping="Wrap" Text="Information Employe" VerticalAlignment="Top" Width="93"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" Height="18" Margin="162,113,0,0" VerticalAlignment="Top" Width="93"/>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="162,151,0,0" VerticalAlignment="Top" Width="93"/>
+        <ListBox HorizontalAlignment="Left" Height="19" Margin="280,24,0,0" VerticalAlignment="Top" Width="93" />
+        <TextBlock HorizontalAlignment="Left" Margin="280,62,0,0" TextWrapping="Wrap" Text="Information Formation" VerticalAlignment="Top" Height="69" Width="93"/>
+        <Button Content="Ajouter Formation" HorizontalAlignment="Left" Margin="280,131,0,0" VerticalAlignment="Top" Width="110"/>
+        <ListBox HorizontalAlignment="Left" Height="19" Margin="280,173,0,0" VerticalAlignment="Top" Width="93" />
+        <TextBlock HorizontalAlignment="Left" Margin="280,197,0,0" TextWrapping="Wrap" Text="information session" VerticalAlignment="Top" Height="51" Width="92"/>
+        <Button Content="Ajouter Session" HorizontalAlignment="Left" Margin="280,253,0,0" VerticalAlignment="Top" Width="110"/>
+
+    </Grid>
+</Window>

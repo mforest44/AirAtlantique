@@ -1,0 +1,26 @@
+﻿<Window x:Class="AirAtlantique.emp.ListeEmp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirAtlantique.emp"
+        mc:Ignorable="d"
+        Title="ListeEmp" Height="312" Width="416">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/AirAtlantique;component/image/bleu.jpeg" Stretch="None"/>
+        </Grid.Background>
+        <ListBox x:Name="listEmp" HorizontalAlignment="Left" Height="135" Margin="24,71,0,0" VerticalAlignment="Top" Width="132" SelectionChanged="listEmp_SelectionChanged"/>
+        <TextBlock x:Name="listemp" HorizontalAlignment="Left" Margin="24,29,0,0" TextWrapping="Wrap" Text="Liste Employés" VerticalAlignment="Top" Height="18" Width="106"/>
+        <Button x:Name="creation" Content="Créer un employé" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="creation_Click"/>
+        <Button x:Name="Supprimer" Content="Supprimer" HorizontalAlignment="Left" Margin="199,234,0,0" VerticalAlignment="Top" Width="75" Click="Supprimer_Click" IsEnabled="False"/>
+        <Button x:Name="Retour" Content="Retour" HorizontalAlignment="Left" Margin="199,29,0,0" VerticalAlignment="Top" Width="75" Click="Retour_Click"/>
+        <TextBlock x:Name="Nom" HorizontalAlignment="Left" Margin="199,93,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top"/>
+        <TextBlock x:Name="nom" HorizontalAlignment="Left" Margin="279,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Prenom" HorizontalAlignment="Left" Margin="199,147,0,0" TextWrapping="Wrap" Text="Prenom" VerticalAlignment="Top"/>
+        <TextBlock x:Name="prenom" HorizontalAlignment="Left" Margin="279,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Metier" HorizontalAlignment="Left" Margin="199,190,0,0" TextWrapping="Wrap" Text="Metier" VerticalAlignment="Top"/>
+        <TextBlock x:Name="metier" HorizontalAlignment="Left" Margin="279,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

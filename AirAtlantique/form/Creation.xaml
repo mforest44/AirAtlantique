@@ -1,0 +1,32 @@
+﻿<Window x:Class="AirAtlantique.form.Creation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirAtlantique.form"
+        mc:Ignorable="d"
+        Title="Creation" Height="495" Width="300">
+    <Grid Margin="0,0,0,-31">
+        <Grid.Background>
+            <ImageBrush ImageSource="/AirAtlantique;component/image/bleu.jpeg" Stretch="None"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="314*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="13,12,0,0" TextWrapping="Wrap" Text="Nom de la formation" VerticalAlignment="Top" Width="116" Height="16"/>
+        <TextBox x:Name="Nom" HorizontalAlignment="Left" Height="24" Margin="152,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="13,50,0,0" TextWrapping="Wrap" Text="Durée ( en jours )" VerticalAlignment="Top" Height="22" Width="105"/>
+        <TextBox x:Name="Duree" HorizontalAlignment="Left" Height="22" Margin="152,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="13,88,0,0" TextWrapping="Wrap" Text="Durée de validité ( en années )" VerticalAlignment="Top" Height="34" Width="92"/>
+        <TextBox x:Name="Validite" HorizontalAlignment="Left" Height="24" Margin="152,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="13,301,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="18" Width="66"/>
+        <TextBox x:Name="Description" HorizontalAlignment="Left" Height="90" Margin="120,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <Button x:Name="Valider" Content="Valider" HorizontalAlignment="Left" Margin="201,396,0,42" Width="75" Click="Valider_Click"/>
+        <Button x:Name="Retour" Content="Retour" HorizontalAlignment="Left" Margin="43,396,0,0" Width="75" Height="20" VerticalAlignment="Top" Click="Retour_Click"/>
+        <CheckBox x:Name="Obligatoire" Content="Obligatoire" HorizontalAlignment="Left" Margin="152,266,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Metier" HorizontalAlignment="Left" Margin="13,149,0,0" TextWrapping="Wrap" Text="Metier" VerticalAlignment="Top" Width="92"/>
+        <ListBox x:Name="metier" HorizontalAlignment="Left" Height="100" Margin="152,149,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
